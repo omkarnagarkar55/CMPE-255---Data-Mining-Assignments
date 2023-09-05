@@ -10,10 +10,10 @@ In Assignment 2, the project is created with the help of gpt-engineer tool(https
 * For the development version, clone the repository and then install the package using pip.
 
 **2. API Key Setup**
-* You have two ways to set up your OpenAI API key. You can either directly export it as an environment variable, or save it in a .env file.
+* You have two ways to set up your OpenAI API key. You can either directly export it as an environment variable (), or save it in a .env file.(Add your OPENAI_API_KEY in .env) **export OPENAI_API_KEY=[your api key]**
 
 **3. Running the Program**
-* To run the application, create a new folder and copy an example project into it. Update the prompt file in your new project folder and execute the gpt-engineer command. "gpt-engineer projects/[{projectName}]"
+* To run the application, create a new folder and copy an example project into it. Update the prompt file in your new project folder and execute the gpt-engineer command. **gpt-engineer projects/[{projectName}]**
 
 **4. Additional Options**
 You can access more command-line options using gpt-engineer --help, like improving code with the --steps use_feedback option.
