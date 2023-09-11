@@ -1,2 +1,0 @@
-We are writing flappy bird in python. MVC components split in separate files. Keyboard control.
-Also add unit test using pytest for the game.
