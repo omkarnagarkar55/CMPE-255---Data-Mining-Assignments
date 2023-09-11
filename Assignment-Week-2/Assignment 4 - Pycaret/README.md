@@ -1,6 +1,6 @@
 # Data Mining Pycaret Assignment
 
-## This assignment was performed using PyCaret Library. 
+## This assignment was performed using PyCaret Library on Google Colab. 
 
 ## 1. Introduction
 PyCaret is an open-source, low-code machine learning library in Python that automates the machine learning workflow. It is an end-to-end machine learning and model management tool that speeds up the experiment cycle exponentially and makes you more productive.
