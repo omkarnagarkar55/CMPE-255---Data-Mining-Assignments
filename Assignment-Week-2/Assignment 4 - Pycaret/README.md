@@ -1,4 +1,4 @@
-# CMPE-255---Data-Mining-Assignments
+# Data Mining Pycaret Assignment
 
 ## Recordings
 
