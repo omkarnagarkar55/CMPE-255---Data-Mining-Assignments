@@ -20,7 +20,7 @@ Phases:
 * **Evaluation**: Assess the models to ensure they meet the business objectives and requirements.
 * **Deployment**: Implement the model into the business operation and monitor its performance.
 
-2.**KDD (Knowledge Discovery in Databases)**
+2. **KDD (Knowledge Discovery in Databases)**
 KDD is the process of discovering useful knowledge from a collection of data. It involves the use of databases along with machine learning and statistics techniques.
 
 Phases:
@@ -30,7 +30,7 @@ Phases:
 * **Data Mining**: Apply algorithms to extract patterns from the transformed data.
 * **Interpretation/Evaluation**: Interpret and evaluate the mined patterns to gain knowledge.
 
-3.**SEMMA (Sample, Explore, Modify, Model, Assess)**
+3. **SEMMA (Sample, Explore, Modify, Model, Assess)**
 SEMMA is a methodology developed by SAS Institute for data mining projects. It emphasizes the iterative nature of data mining.
 
 Phases:
@@ -40,11 +40,17 @@ Phases:
 * **Model**: Apply various modeling techniques to the data to create predictive or descriptive models.
 * **Assess**: Evaluate the models to ensure they are accurate and reliable.
 
+## IPython Notebooks
+
+* [CRISP-DM Methodology Project IPython Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/CRISP-DM%20Methodology%20Project/Diabetes_Prediction_Using_CRIPSDM.ipynb)
+* [KDD Methodology Project IPython Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/KDD%20Methodology%20Project/Stroke_Prediction_Using_KDD.ipynb)
+* [SEMMA Methodology Project IPython Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/SEMMA%20Methodology%20Project/Water_Potability_Prediction_Using_SEMMA.ipynb)
+
 ## Research Papers
 
-* [CRISP-DM Methodology Project Research Paper]()
-* [KDD Methodology Project]()
-* [SEMMA Methodology Project]()
+* [CRISP-DM Methodology Project Research Paper](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/CRISP-DM%20Methodology%20Project/DiabetesPrediction-CRISP-DM-Research-Paper.pdf)
+* [KDD Methodology Project](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/KDD%20Methodology%20Project/Stroke-Prediction-KDD-Research-Paper.pdf)
+* [SEMMA Methodology Project](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-3/SEMMA%20Methodology%20Project/Water-Potability-Prediction-SEMMA-Research-Paper.pdf)
   
 ## Medium Articles
 * [CRISP-DM Project Medium Article](https://medium.com/@omkarnagarkar55/predictive-modeling-for-diabetes-diagnosis-an-application-of-crisp-dm-methodology-4bddc0bdb224)
