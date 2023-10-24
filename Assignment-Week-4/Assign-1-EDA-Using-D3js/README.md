@@ -30,6 +30,7 @@ In this assignment, Exploratory data analysis was performed on the dataset and d
 
 [Charts-d3js.webm](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/aa73e024-52fc-4e64-9181-c752de7716e4)
 
+* Screenshot of chart displayed using d3.js in Google colab.
 
 <img width="468" alt="D3js" src="https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/1cf77cb5-e9ec-405f-8273-76591b27c7d4">
 
