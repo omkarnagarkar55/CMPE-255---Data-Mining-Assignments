@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Data Visualizations</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .bar {
+            fill: #3498db;
+            transition: fill 0.3s;
+        }
+        .bar:hover {
+            fill: #2980b9;
+        }
+        .line {
+            fill: none;
+            stroke: #e74c3c;
+            stroke-width: 2px;
+            transition: stroke 0.3s;
+        }
+        .line:hover {
+            stroke: #c0392b;
+        }
+        .dot {
+            fill: #2ecc71;
+            opacity: 0.6;
+            transition: fill 0.3s;
+        }
+        .dot:hover {
+            fill: #27ae60;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            pointer-events: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .axis-label {
+            font-weight: bold;
+        }
+        #linechart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        svg {
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Distribution of Wine Types</h2>
+<svg id="wineTypes" width="500" height="300"></svg>
+
+<h2>Average Values vs. Wine Quality</h2>
+<div id="linechart"></div>
+
+<h2>Alcohol vs. Wine Quality</h2>
+<svg id="scatterPlot" width="600" height="400"></svg>
+
+<script>
+    var tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    // Bar chart: Wine Type Distribution
+    d3.json("wine_type_distribution.json").then(function(data) {
+        var svg = d3.select("#wineTypes"),
+            margin = {top: 20, right: 20, bottom: 30, left: 40},
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom;
+        var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+            y = d3.scaleLinear().rangeRound([height, 0]);
+        var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        x.domain(data.map(function(d) { return d.type; }));
+        y.domain([0, d3.max(data, function(d) { return d.count; })]);
+        g.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
+        g.append("g").call(d3.axisLeft(y).ticks(10));
+        g.selectAll(".bar").data(data).enter().append("rect").attr("class", "bar").attr("x", function(d) { return x(d.type); }).attr("y", function(d) { return y(d.count); }).attr("width", x.bandwidth()).attr("height", function(d) { return height - y(d.count); })
+        .on("mouseover", function(d) {
+            tooltip.transition().duration(200).style("opacity", .9);
+            tooltip.html(d.type + ": " + d.count).style("left", (d3.event.pageX + 5) + "px").style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d) {
+            tooltip.transition().duration(500).style("opacity", 0);
+        });
+    });
+
+    // Line charts: Average Values vs. Wine Quality
+    d3.json("quality_mean_data.json").then(function(data) {
+        var features = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar", "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density", "pH", "sulphates", "alcohol"];
+        features.forEach(function(feature) {
+            var margin = {top: 20, right: 30, bottom: 30, left: 50},
+                width = 500 - margin.left - margin.right,
+                height = 300 - margin.top - margin.bottom;
+            var x = d3.scaleLinear().range([0, width]),
+                y = d3.scaleLinear().range([height, 0]);
+            var line = d3.line().x(function(d) { return x(d.quality); }).y(function(d) { return y(d[feature]); });
+            var svg = d3.select("#linechart").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            x.domain(d3.extent(data, function(d) { return d.quality; }));
+            y.domain([0, d3.max(data, function(d) { return d[feature]; })]);
+            svg.append("path").data([data]).attr("class", "line").attr("d", line)
+            .on("mouseover", function(d) {
+                tooltip.transition().duration(200).style("opacity", .9);
+                tooltip.html(feature).style("left", (d3.event.pageX + 5) + "px").style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition().duration(500).style("opacity", 0);
+            });
+            svg.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
+            svg.append("g").call(d3.axisLeft(y));
+            svg.append("text").attr("x", width / 2).attr("y", 0 - (margin.top / 2)).attr("text-anchor", "middle").style("font-size", "14px").attr("class", "axis-label").text(feature);
+        });
+    });
+
+    // Scatter plot: Alcohol vs. Wine Quality
+    d3.json("alcohol_quality_scatter.json").then(function(data) {
+        var svg = d3.select("#scatterPlot"),
+            margin = {top: 20, right: 20, bottom: 50, left: 50},
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom;
+        var x = d3.scaleLinear().range([0, width]),
+            y = d3.scaleLinear().range([height, 0]);
+        var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        x.domain([d3.min(data, function(d) { return d.alcohol; }) - 1, d3.max(data, function(d) { return d.alcohol; }) + 1]);
+        y.domain([d3.min(data, function(d) { return d.quality; }) - 1, d3.max(data, function(d) { return d.quality; }) + 1]);
+        g.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x)).append("text").attr("x", width / 2).attr("y", 40).attr("fill", "#000").attr("class", "axis-label").text("Alcohol Content");
+        g.append("g").call(d3.axisLeft(y)).append("text").attr("transform", "rotate(-90)").attr("y", -40).attr("dy", "0.71em").attr("fill", "#000").attr("class", "axis-label").text("Wine Quality");
+        g.selectAll(".dot").data(data).enter().append("circle").attr("class", "dot").attr("cx", function(d) { return x(d.alcohol); }).attr("cy", function(d) { return y(d.quality); }).attr("r", 3)
+        .on("mouseover", function(d) {
+            tooltip.transition().duration(200).style("opacity", .9);
+            tooltip.html("Alcohol: " + d.alcohol + "<br>Quality: " + d.quality).style("left", (d3.event.pageX + 5) + "px").style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d) {
+            tooltip.transition().duration(500).style("opacity", 0);
+        });
+    });
+</script>
+</body>
+</html>
