@@ -14,6 +14,6 @@ In this Jupyter notebook, we dive deep into data transformation techniques using
   
 ## Data Transformation and Analysis
 * Delve deep into the core of the notebook, where data transformation using Apache Beam takes center stage.
-  ** Calculating the Average Sales Price: Understand the method to calculate this crucial metric.
-  ** Creating and Executing the Pipeline: Walkthrough of the pipeline creation process and its execution.
-  ** Composite Transforms: Dive into advanced transformation techniques that bundle multiple operations.
+  * Calculating the Average Sales Price: Understand the method to calculate this crucial metric.
+  * Creating and Executing the Pipeline: Walkthrough of the pipeline creation process and its execution.
+  * Composite Transforms: Dive into advanced transformation techniques that bundle multiple operations.
