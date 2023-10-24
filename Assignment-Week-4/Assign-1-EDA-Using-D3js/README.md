@@ -1,9 +1,30 @@
-# Data Mining JadBio Assignment
+# Data Mining EDA Assignment
 
-Note:- The assignment was executed on the **DataRobot** platform, replacing our initial use of the **JadBio** platform. For a comprehensive overview, please access the detailed recording of the entire AutoML process performed on the dataset, provided below.
+## Kaggle Dataset used  - https://www.kaggle.com/datasets/rajyellow46/wine-quality
 
-**Kaggle dataset user for the assignment**- https://www.kaggle.com/datasets/ishanshrivastava28/superstore-sales
+In this assignment, Exploratory data analysis was performed on the dataset and d3.js was used for visualization.
 
-## Recording
+## Loading Dataset
+* Initial step to load the dataset and get a quick overview.
 
-https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/54e2660b-5996-4240-9bd8-f927c6fbd456
+## Data Understanding
+* Dive deep into the dataset, understand its structure, and identify any potential issues.
+
+## Handling the Missing Values
+* Clean the dataset by addressing any missing or null values.
+
+## Visualization
+* Use various visualization techniques to get insights from the data.
+
+## Exploratory Data Analysis (EDA)
+* A comprehensive analysis to understand patterns, relationships, and anomalies.
+
+## Storing Data into JSON for D3.js Visualization
+* Prepare the data in JSON format suitable for D3.js visualizations.
+
+## D3.js Visualization
+Implement visualizations using D3.js for interactive data insights.
+
+
+  
+
