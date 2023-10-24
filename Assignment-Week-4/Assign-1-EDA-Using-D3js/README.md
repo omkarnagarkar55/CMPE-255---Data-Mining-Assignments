@@ -23,10 +23,10 @@ In this assignment, Exploratory data analysis was performed on the dataset and d
 * Prepare the data in JSON format suitable for D3.js visualizations.File with *.json are saved.
 
 ### D3.js Visualization
-Implement visualizations using D3.js for interactive data insights. 
+* Implement visualizations using D3.js for interactive data insights. 
 
 ### Recordings:-
-Following is the recording of the charts produced using D3.js. Index.html contains code for html,css and javascript.
+* Following is the recording of the charts produced using D3.js. Index.html contains code for html,css and javascript.
 
 [Charts-d3js.webm](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/aa73e024-52fc-4e64-9181-c752de7716e4)
 
