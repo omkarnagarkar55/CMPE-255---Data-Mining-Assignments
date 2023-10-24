@@ -1,6 +1,6 @@
 # Data Mining EDA Assignment
 
-## Kaggle Dataset used  - https://www.kaggle.com/datasets/rajyellow46/wine-quality
+Kaggle Dataset used  - [DataSet](https://www.kaggle.com/datasets/rajyellow46/wine-quality) 
 
 In this assignment, Exploratory data analysis was performed on the dataset and d3.js was used for visualization.
 
@@ -24,6 +24,17 @@ In this assignment, Exploratory data analysis was performed on the dataset and d
 
 ## D3.js Visualization
 Implement visualizations using D3.js for interactive data insights.
+
+## Recordings:-
+Following is the recording of the charts produced using D3.js.
+
+[Charts-d3js.webm](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/aa73e024-52fc-4e64-9181-c752de7716e4)
+
+
+
+
+
+
 
 
   
