@@ -4,7 +4,7 @@ Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week
 
 ### Medium Article 
 <a target="_blank" href="https://medium.com/@omkarnagarkar53/leveraging-gpt-4-for-rapid-data-science-analysis-a-comprehensive-dive-across-diverse-datasets-c95a71c5cfc6">
-    <img src="https://github-readme-medium-recent-article.vercel.app/medium/@omkarnagarkar53/index" alt="Medium Article">
+    <img src="https://cdn.iconscout.com/icon/free/png-512/medium-47-569287.png" alt="Medium Article">
 </a>
 
 
