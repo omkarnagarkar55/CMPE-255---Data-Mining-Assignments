@@ -2,6 +2,8 @@
 
 Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
 
+<a target="_blank" href="https://medium.com/@omkarnagarkar53/leveraging-gpt-4-for-rapid-data-science-analysis-a-comprehensive-dive-across-diverse-datasets-c95a71c5cfc6"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@username/index" alt="Medium Article">
+
 ## Notebooks:
 
 1. **Tabular Diverse Set Analysis** - [Tabular_Diverse_Set.ipynb](a.Tabular_Diverse_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/a.Tabular_Diverse_Set.ipynb)
