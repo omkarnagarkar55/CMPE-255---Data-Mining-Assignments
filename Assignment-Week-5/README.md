@@ -6,25 +6,25 @@ Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week
 
 ## Notebooks:
 
-1. **Tabular Diverse Set Analysis** - [Tabular_Diverse_Set.ipynb](a.Tabular_Diverse_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/a)Tabular_Diverse_Set.ipynb)
+1. **Tabular Diverse Set Analysis** - [Tabular_Diverse_Set.ipynb](a.Tabular_Diverse_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/a.Tabular_Diverse_Set.ipynb)
    - Description: Dive into the analysis of diverse tabular datasets and understand their characteristics.
 
-2. **Time Series Analysis** - [Timeseries.ipynb](b.Timeseries.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/b)Timeseries.ipynb)
+2. **Time Series Analysis** - [Timeseries.ipynb](b.Timeseries.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/b.Timeseries.ipynb)
    - Description: Explore the intricacies of time series data and its patterns.
 
-3. **Spatio-Temporal Data Analysis** - [Spatio_Temporal.ipynb](c.Spatio_Temporal.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/c)Spatio_Temporal.ipynb)
+3. **Spatio-Temporal Data Analysis** - [Spatio_Temporal.ipynb](c.Spatio_Temporal.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/c.Spatio_Temporal.ipynb)
    - Description: Analyze spatio-temporal datasets and uncover hidden insights.
 
-4. **CIFAR10 Image Analysis** - [CIFAR10_Image_Analysis.ipynb](d.CIFAR10_Image_Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/d)CIFAR10_Image_Analysis.ipynb)
+4. **CIFAR10 Image Analysis** - [CIFAR10_Image_Analysis.ipynb](d.CIFAR10_Image_Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/d.CIFAR10_Image_Analysis.ipynb)
    - Description: Dive deep into the CIFAR10 image dataset and understand image data mining techniques.
 
-5. **Audio Classification** - [Audio_Classification.ipynb](e.Audio_Classification.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/e)Audio_Classification.ipynb)
+5. **Audio Classification** - [Audio_Classification.ipynb](e.Audio_Classification.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/e.Audio_Classification.ipynb)
    - Description: Explore the world of audio data and techniques to classify different sounds.
 
-6. **Video Classification** - [Video_Classification.ipynb](f.Video_Classification.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/f)Video_Classification.ipynb)
+6. **Video Classification** - [Video_Classification.ipynb](f.Video_Classification.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/f.Video_Classification.ipynb)
    - Description: Understand the nuances of video data and methods to classify various video clips.
 
-7. **Graph Data Set Analysis** - [Graph_Data_Set.ipynb](g.Graph_Data_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/g)Graph_Data_Set.ipynb)
+7. **Graph Data Set Analysis** - [Graph_Data_Set.ipynb](g.Graph_Data_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/g.Graph_Data_Set.ipynb)
    - Description: Delve into graph datasets and understand their unique properties.
 
 ## Getting Started:
