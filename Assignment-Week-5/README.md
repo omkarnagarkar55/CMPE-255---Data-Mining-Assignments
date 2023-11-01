@@ -2,11 +2,10 @@
 
 Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
 
-### Medium Article 
+### Medium Article (Click on the icon below)
 <a target="_blank" href="https://medium.com/@omkarnagarkar53/leveraging-gpt-4-for-rapid-data-science-analysis-a-comprehensive-dive-across-diverse-datasets-c95a71c5cfc6">
     <img src="https://cdn.iconscout.com/icon/free/png-512/medium-47-569287.png" alt="Medium Article">
 </a>
-
 
 ## Notebooks:
 
