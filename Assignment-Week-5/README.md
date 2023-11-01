@@ -1,7 +1,5 @@
 # Data Preparation and Processing Assignment
 
-# CMPE-255 Data Mining Assignments - Week 5
-
 Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
 
 ## Notebooks:
