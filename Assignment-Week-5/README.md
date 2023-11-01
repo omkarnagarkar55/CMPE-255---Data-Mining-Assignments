@@ -81,6 +81,7 @@ pip install pycaret sweetviz tensorflow keras h2o
         * Use Isolation Forest, One-Class SVM for anomaly detection.
     
 4. **Model Building**:
+   
     a) Split data into training and test sets.
     b) Use AutoML platforms like Azure ML, AWS Sagemaker, or tools like TPOT to automatically select the best model.
     c) Build ensemble models like Random Forest, Gradient Boosting, or stacking of different models.
