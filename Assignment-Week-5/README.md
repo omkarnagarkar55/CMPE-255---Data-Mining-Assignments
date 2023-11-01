@@ -62,7 +62,6 @@ pip install pycaret sweetviz tensorflow keras h2o
 
 2. **Data Preprocessing**:
     a) Cleaning:
-    
         * Handle missing values (imputation or removal).
         * Remove duplicates.
         * Handle outliers (using IQR, Z-score, etc.).
