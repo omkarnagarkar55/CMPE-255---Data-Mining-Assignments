@@ -35,11 +35,11 @@ To get started with the notebooks, ensure you have Jupyter Notebook installed. C
 
 The following are the required dependencies for the notebooks in this repository:
 
-1. Python 3.9 - Ensure you have Python 3.9 installed. If not, download and install it from the official Python website.
-2. Pycaret - Installation: pip install pycaret.
-3. Sweetviz - Installation: pip install sweetviz
-4. Tensorflow and Keras - Installation for Tensorflow: pip install tensorflow . Installation for Keras: pip install keras
-5. h2o - Installation: pip install h2o
+1. **Python 3.9** - Ensure you have Python 3.9 installed. If not, download and install it from the official Python website.
+2. **Pycaret** - Installation: pip install pycaret.
+3. **Sweetviz** - Installation: pip install sweetviz
+4. **Tensorflow and Keras** - Installation for Tensorflow: pip install tensorflow . Installation for Keras: pip install keras
+5. **h2o** - Installation: pip install h2o
 
 To install all the dependencies at once, you can use the following command:
 ```
