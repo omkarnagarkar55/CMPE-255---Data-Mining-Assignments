@@ -50,3 +50,37 @@ To install all the dependencies at once, you can use the following command:
 pip install pycaret sweetviz tensorflow keras h2o
 ```
 
+## Steps followed For Each Dataset :
+
+1. **Exploratory Data Analysis (EDA)**:
+    For each dataset:
+    
+    a) Load the data.
+    b) Check for missing values.
+    c) Visualize distributions of key features.
+    d) Check for correlations between features.
+    e) Use auto EDA tools like pandas-profiling or sweetviz for detailed reports.
+
+2. **Data Preprocessing**:
+    a) Cleaning:
+    
+        * Handle missing values (imputation or removal).
+        * Remove duplicates.
+        * Handle outliers (using IQR, Z-score, etc.).
+    
+    b) Feature Engineering:
+        * Create new features based on domain knowledge.
+        * Convert categorical variables to numerical (one-hot encoding, label encoding).
+        * Normalize/standardize numerical features.
+    
+    c) Feature Selection:
+        * Use techniques like Recursive Feature Elimination (RFE), feature importance from tree-based models, or correlation analysis.
+        
+    d) Clustering and Anomaly Detection:
+        * Use algorithms like KMeans, DBSCAN for clustering.
+        * Use Isolation Forest, One-Class SVM for anomaly detection.
+    
+3. **Model Building**:
+    a) Split data into training and test sets.
+    b) Use AutoML platforms like Azure ML, AWS Sagemaker, or tools like TPOT to automatically select the best model.
+    c) Build ensemble models like Random Forest, Gradient Boosting, or stacking of different models.
