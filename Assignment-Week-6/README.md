@@ -1,12 +1,6 @@
-# Data Preparation and Processing Assignment
+# Clustering Assignment
 
-Welcome to the Week 5 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
-
-### Medium Article (Click on the icon below)
-<a target="_blank" href="https://medium.com/@omkarnagarkar53/leveraging-gpt-4-for-rapid-data-science-analysis-a-comprehensive-dive-across-diverse-datasets-c95a71c5cfc6">
-    <img src="https://cdn.iconscout.com/icon/free/png-256/free-medium-47-433328.png" alt="Medium Article">
-</a>
-
+Welcome to the Week 6 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
 
 ## Notebooks:
 
