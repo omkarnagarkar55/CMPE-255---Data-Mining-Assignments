@@ -56,8 +56,7 @@ To run these notebooks, you need to have Python installed along with the followi
 
 You can install these dependencies using pip:
 
-bash
-```pip install numpy pandas matplotlib scikit-learn```
+```pip install numpy pandas matplotlib scikit-learn keras tensorflow ```
 
 ## Steps Followed For Each Dataset
 
