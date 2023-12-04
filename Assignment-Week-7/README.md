@@ -1,75 +1,31 @@
 # Dimensionality Reduction Techniques
 
-Welcome to the Week 7 assignments for the CMPE-255 Data Mining course. This week, we delve into various data types and their analysis. Below are the notebooks detailing each type:
+Welcome to the Week 7 assignments for the CMPE-255 Data Mining course. This week, we focus on dimensionality reduction techniques, exploring various methods and their applications on different datasets.
+
+## Notebooks:
+
+1. **Dimensionality Reduction on Wine Dataset**
+   - [View Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/a\)Dimensionality_Reduction_Wine_Dataset.ipynb)
+   - [Open in Colab](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/a\)Dimensionality_Reduction_Wine_Dataset.ipynb)
+   - Description: This notebook demonstrates various dimensionality reduction techniques applied to the wine quality dataset, including PCA, SVD, MDS, LLE, UMAP, and t-SNE.
+
+2. **UMAP for Dimensionality Reduction**
+   - [View Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/b\)UMAP_For_Dimensionality_Reduction.ipynb)
+   - [Open in Colab](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/b\)UMAP_For_Dimensionality_Reduction.ipynb)
+   - Description: This notebook explores the use of UMAP (Uniform Manifold Approximation and Projection) for dimensionality reduction.
+
+3. **Dimensionality Reduction Using Databricks**
+   - [View Notebook](https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/c\)Dimentionality-Reduction-Using-Databricks.ipynb)
+   - [Open in Colab](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-7/c\)Dimentionality-Reduction-Using-Databricks.ipynb)
+   - [Link to Databricks Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/5069776356103099/2056839669836899/1695395695295838/latest.html)
+   - Description: This notebook demonstrates the application of dimensionality reduction techniques using Databricks.
+
+## Getting Started
+
+To get started with the notebooks, ensure you have Jupyter Notebook installed. Clone the repository and navigate to the "Assignment-Week-7" directory. Open the desired notebook and run the cells sequentially.
+
 
 ## Databricks Code Execution Screenshot
 
 <img width="954" alt="image" src="https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/3a8979e4-62c9-4c57-94ea-12ff181dd223">
 
-[Link to Databricks Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/5069776356103099/2056839669836899/1695395695295838/latest.html)
-
-## Notebooks:
-
-1. **Tabular Diverse Set Analysis** - [Tabular_Diverse_Set.ipynb](a.Tabular_Diverse_Set.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/a.Tabular_Diverse_Set.ipynb)
-   - Description: Dive into the analysis of diverse tabular datasets and understand their characteristics.
-
-2. **Time Series Analysis** - [Timeseries.ipynb](b.Timeseries.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/b.Timeseries.ipynb)
-   - Description: Explore the intricacies of time series data and its patterns.
-
-3. **Spatio-Temporal Data Analysis** - [Spatio_Temporal.ipynb](c.Spatio_Temporal.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/blob/main/Assignment-Week-5/c.Spatio_Temporal.ipynb)
-   - Description: Analyze spatio-temporal datasets and uncover hidden insights.
-
-## Getting Started:
-
-To get started with the notebooks, ensure you have Jupyter Notebook installed. Clone the repository and navigate to the "Assignment-Week-5" directory. Open the desired notebook and run the cells sequentially.
-
-## Dependencies:
-
-The following are the required dependencies for the notebooks in this repository:
-
-1. **Python 3.9** - Ensure you have Python 3.9 installed. If not, download and install it from the official Python website.
-2. **Pycaret** - Installation: pip install pycaret.
-3. **Sweetviz** - Installation: pip install sweetviz
-4. **Tensorflow and Keras** - Installation for Tensorflow: pip install tensorflow . Installation for Keras: pip install keras
-5. **h2o** - Installation: pip install h2o
-
-To install all the dependencies at once, you can use the following command:
-```
-pip install pycaret sweetviz tensorflow keras h2o
-```
-
-## Steps followed For Each Dataset :
-
-1. **Exploratory Data Analysis (EDA)**:
-    For each dataset:
-    
-    a) Load the data.
-    b) Check for missing values.
-    c) Visualize distributions of key features.
-    d) Check for correlations between features.
-    e) Use auto EDA tools like pandas-profiling or sweetviz for detailed reports.
-
-2. **Data Preprocessing**:
-
-   a) Cleaning:
-        * Handle missing values (imputation or removal).
-        * Remove duplicates.
-        * Handle outliers (using IQR, Z-score, etc.).
-    
-    b) Feature Engineering:
-        * Create new features based on domain knowledge.
-        * Convert categorical variables to numerical (one-hot encoding, label encoding).
-        * Normalize/standardize numerical features.
-    
-    c) Feature Selection:
-        * Use techniques like Recursive Feature Elimination (RFE), feature importance from tree-based models, or correlation analysis.
-        
-    d) Clustering and Anomaly Detection:
-        * Use algorithms like KMeans, DBSCAN for clustering.
-        * Use Isolation Forest, One-Class SVM for anomaly detection.
-    
-4. **Model Building**:
-   
-   a) Split data into training and test sets.
-   b) Use AutoML platforms like Azure ML, AWS Sagemaker, or tools like TPOT to automatically select the best model.
-   c) Build ensemble models like Random Forest, Gradient Boosting, or stacking of different models.
