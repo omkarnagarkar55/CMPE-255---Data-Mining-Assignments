@@ -24,8 +24,23 @@ Welcome to the Week 7 assignments for the CMPE-255 Data Mining course. This week
 
 To get started with the notebooks, ensure you have Jupyter Notebook installed. Clone the repository and navigate to the "Assignment-Week-7" directory. Open the desired notebook and run the cells sequentially.
 
+### Installation
+To run these notebooks, you will need:
 
-## Databricks Code Execution Screenshot
+- Python 3.x
+- Jupyter Notebook
+- Required Python libraries: pandas, numpy, matplotlib, scikit-learn, umap-learn (Install these using pip or conda)
 
+## Steps Followed For Each Dataset
+
+- Data Loading: Load the datasets for analysis.
+- Data Preprocessing: Perform necessary preprocessing steps like handling missing values, feature scaling, etc.
+- Applying Dimensionality Reduction Techniques: Apply various dimensionality reduction techniques and analyze their effectiveness.
+- Visualization: Visualize the results of dimensionality reduction.
+- Further Analysis: Perform clustering or classification tasks on the reduced datasets.
+  
+## Screenshots
+
+1. Databricks Code Execution Screenshot
 <img width="954" alt="image" src="https://github.com/omkarnagarkar55/CMPE-255---Data-Mining-Assignments/assets/60735358/3a8979e4-62c9-4c57-94ea-12ff181dd223">
 
